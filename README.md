@@ -13,6 +13,17 @@ Było dużo o charakterystycznych elementach składni Kotlina, ale też sporo o 
 
 W folderze Android4Beginners1 znajdziecie kod z pierwszych zajęć wzbogacony o komentarze, które uznałem za istotne.
 
+### Zajęcia 2. Pierwszy ekran
+
+Opowiedzieliśmy sobie, czym jest `Activity` i na czym polega jego cykl życia. Załączam schemat z prezentacji.
+![Activity lifecycle](assets/lifecycle.png)
+
+Było też o tworzeniu layoutu poprzez dodawanie do niego widoków w Layout Editorze oraz o tym, jak te widoki przedstawione są w XMLu. Więcej możecie o tym poczytać [tutaj](https://developer.android.com/training/basics/firstapp/building-ui.html). Nie zabrakło informacji o tym, jak reagować na eventy związane z tapowaniem widoków. 
+
+Na koniec wspomnieliśmy też o tym, że `Context` istnieje i nie należy się go bać, mimo że jest ogromny i wszechpotężny ;]
+
+Jak poprzednio, w folderze Android4Beginners2 znajdziecie kod z zajęć wzbogacony o komentarze.
+
 ## Materiały
 
 - [Kotlin Koans](http://kotlinlang.org/docs/tutorials/koans.html)

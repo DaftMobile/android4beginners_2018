@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.daftmobile.android4beginners2.MainActivity">
+
+    <!-- Każdy znacznik to jeden widok w naszym erkanie -->
+    <!-- Znaczniki mają atrybuty, które definiują ich właściwości i stan, np. rozmiar textu (textSize) -->
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+
+    <!-- Każdy widok musi mieć określone android:layout_height oraz android:layout_width -->
+    <!-- Na razie dla width najbezpieczniej przyjąć "match_parent", dla height - "wrap_content" -->
+    <EditText
+        android:id="@+id/myEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        style="@style/MyRedEditTextStyle" />
+
+    <Button
+        android:id="@+id/funnyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click me!" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Klikniecie na dole na zakładkę Design przeniesie was do Layout Editora -->
+</LinearLayout>

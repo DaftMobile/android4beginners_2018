@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Intent demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="show_color">Pokaż kolor</string>
+    <string name="elements_label">Elementy:</string>
+    <string name="add_new_element">Dodaj nowy element</string>
+    <string name="add_and_close">Dodaj i zamknij</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Email validation</string>
+    <string name="email_hint">Your e-mail</string>
+    <string name="check_button">Check!</string>
+    <string name="keep_button_label">Keep</string>
+    <string name="clear_button_label">Clear</string>
+    <string name="invalid_email_message">Your e-mail is invalid. Would you like to keep it?</string>
+    <string name="valid_email_message">Your e-mail is valid</string>
+</resources>

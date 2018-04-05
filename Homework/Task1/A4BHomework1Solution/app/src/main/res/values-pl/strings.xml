@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="keep_button_label">Zachowaj</string>
+    <string name="check_button">Sprawdź!</string>
+    <string name="email_hint">Twój e-mail</string>
+    <string name="app_name">Walidator e-maili</string>
+    <string name="clear_button_label">Wyczyść</string>
+    <string name="invalid_email_message">Email jest niepoprawny. Czy chcesz go zachować?</string>
+    <string name="valid_email_message">Email jest poprawny</string>
+</resources>

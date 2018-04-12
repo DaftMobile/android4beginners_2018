@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Robot book</string>
+    <string name="sort_action">Sort</string>
+</resources>

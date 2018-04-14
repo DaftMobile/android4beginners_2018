@@ -36,10 +36,21 @@ Na koniec wspomnieliśmy o tym, że korzystamy z *supportu*, by minimalizować w
 
 Przypominam, że w razie niepewności bądź pytań związanych z materiałem z zajęć można pisać na adres znajdujący się na końcu readme :)
 
+### Zajęcia 4. A little architecture
+
+Mówiliśmy o tym, że należy `Activity` traktować jako prosty obiekt, za pomocą którego użytkownik komunikuje się z naszą aplikacją. W związku z powyższym, powinniśmy nasze `Activities` w miarę możliwości odciążać z zadań niezwiązanych z wyświetlaniem treści i obsługą zdarzeń.
+
+Pokazaliśmy sobie, jak do tego celu wykorzystać wzorzec [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) oraz oferowaną przez Googlersów klasę [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel.html) z pakietu  **Android Architecture Components** (link w zakładce [Materiały](#Materiały)). Androidowy `ViewModel` jest nieco podrasowany i potrafi rozpoznać, co dzieje się z naszym `Activity`, dzięki czemu nie musimy przejmować się utratą stanu i naszych danych. Było też trochę o tym, jak skonstruować prostą warstwę **modelu**, z którą może się komunikować nasz `ViewModel`.
+
+Nauczyliśmy się także wykorzystywać [LiveData](https://developer.android.com/topic/libraries/architecture/livedata.html) do zarządzania zasobożernymi zasobami udostępnianymi przez platformę, takimi jak dane z **sensorów** czy **geolokalizacja**. Przykład znajdziecie w folderze Android4Beginners4.
+
+Na koniec poruszyliśmy temat związany z *UI*, czyli **Options menu** znane z wielu androidowych aplikacji. Więcej na ten temat możecie przeczytać [tutaj](https://developer.android.com/guide/topics/ui/menus.html#options-menu).
+
 ## Materiały
 
 - [Kotlin Koans](http://kotlinlang.org/docs/tutorials/koans.html)
 - [Android Developers](https://developer.android.com/index.html)
+- [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html)
 
 ## Kontakt
 

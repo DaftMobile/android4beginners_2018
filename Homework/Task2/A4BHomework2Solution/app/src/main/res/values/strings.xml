@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">A4BHomework2Solution</string>
+    <string name="email_subject">Wiadomość z pracy domowej</string>
+    <string name="choose_contact">Wybierz kontakt</string>
+    <string name="send_email">Mailuj</string>
+</resources>

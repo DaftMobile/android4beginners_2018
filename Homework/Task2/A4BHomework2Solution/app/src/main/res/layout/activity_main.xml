@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.daftmobile.a4bhomework2solution.MainActivity">
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:text="Adres e-mail" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/emailLabel"
+        android:gravity="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        tools:text="konrad.kowalewski@daftcode.pl" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        tools:targetApi="lollipop">
+
+        <!-- zwróćcie uwagę, że każdy z buttonów ma szerokość określoną na 0dp oraz wagę na 1 -->
+        <!-- android przydzieli im miejsce w LinearLayoucie proporcjonalnie do wag -->
+        <!-- możecie pozmieniać te wartości, by zobaczyć, jak system zareaguje -->
+        <!-- zostawiłem różne style na buttonach na wypadek, gdybyście kiedyś ich potrzebowali -->
+        <Button
+            android:id="@+id/chooseContactButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/choose_contact"/>
+
+        <Button
+            android:id="@+id/sendMailButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/send_email"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

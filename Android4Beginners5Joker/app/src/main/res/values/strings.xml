@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Vending Joker</string>
+    <string name="vending_machine">Vending machine</string>
+    <string name="deposit_coin">Deposit coin</string>
+    <string name="enter_choco_bar_name">Enter choco bar name</string>
+    <string name="vend">Vend!</string>
+    <string name="call_button">Call</string>
+    <string name="dummy_button">dummy</string>
+    <string name="nope">Nope!</string>
+    <string name="error">Error</string>
+    <string name="yay">Yay!</string>
+</resources>

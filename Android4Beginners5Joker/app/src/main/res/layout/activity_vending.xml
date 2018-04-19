@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.daftmobile.android4beginners5.vending.VendingActivity">
+
+    <TextView
+        android:id="@+id/depositView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/depositButton"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:text="Coins: 0" />
+
+    <Button
+        android:id="@+id/depositButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/deposit_coin" />
+
+    <EditText
+        android:id="@+id/barNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/depositButton"
+        android:hint="@string/enter_choco_bar_name"
+        android:inputType="textCapWords" />
+
+    <Button
+        android:id="@+id/vendButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barNameInput"
+        android:text="@string/vend" />
+</RelativeLayout>

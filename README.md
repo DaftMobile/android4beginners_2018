@@ -42,9 +42,33 @@ Mówiliśmy o tym, że należy `Activity` traktować jako prosty obiekt, za pomo
 
 Pokazaliśmy sobie, jak do tego celu wykorzystać wzorzec [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) oraz oferowaną przez Googlersów klasę [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel.html) z pakietu  **Android Architecture Components** (link w zakładce [Materiały](#Materiały)). Androidowy `ViewModel` jest nieco podrasowany i potrafi rozpoznać, co dzieje się z naszym `Activity`, dzięki czemu nie musimy przejmować się utratą stanu i naszych danych. Było też trochę o tym, jak skonstruować prostą warstwę **modelu**, z którą może się komunikować nasz `ViewModel`.
 
-Nauczyliśmy się także wykorzystywać [LiveData](https://developer.android.com/topic/libraries/architecture/livedata.html) do zarządzania zasobożernymi zasobami udostępnianymi przez platformę, takimi jak dane z **sensorów** czy **geolokalizacja**. Przykład znajdziecie w folderze Android4Beginners4.
+Nauczyliśmy się także wykorzystywać [LiveData](https://developer.android.com/topic/libraries/architecture/livedata.html) do zarządzania zasobożernymi serwisami udostępnianymi przez platformę, takimi jak dane z **sensorów** czy **geolokalizacja**. Przykład znajdziecie w folderze Android4Beginners4.
 
 Na koniec poruszyliśmy temat związany z *UI*, czyli **Options menu** znane z wielu androidowych aplikacji. Więcej na ten temat możecie przeczytać [tutaj](https://developer.android.com/guide/topics/ui/menus.html#options-menu).
+
+### Zajęcia 5. Networking 101. O wątkach i wyjątkach
+
+Na początku opowiedziałem o wyjątkach. Mówiliśmy, kiedy i jak je rzucać (`throw`) oraz jak je łapać (`try-catch-finally`). Porównaliśmy *checked exceptions* and *runtime exceptions* i omówiliśmy **brak** mechanizmu wymuszania przez kompilator obsługi *checked exceptions* w Kotlinie (w odróżnieniu od Javy).
+
+Dalej powiedzieliśmy sobie, czym jest **wątek główny** (*main thread*/*UI thread*) w Androidzie oraz że nigdy **nie należy go blokować** oraz nie wolno modyfikować UI *spoza* tego wątku. Z tego tematu przeszliśmy płynnie do networkingu, ponieważ nie można łączyć się z Internetem z głównego wątku.
+
+O networkingu powiedzieliśmy, jak wykorzystać do obsługi REST API bibliotekę [Retrofit](http://square.github.io/retrofit/). Należy stworzyć interfejs (w języku Kotlin/Java), w którym każda metoda (opatrzona odpowiednią adnotacją) będzie odpowiadała jednemu endpointowi API, a następnie utworzyć instację naszego interfejsu za pomocą obiektu `Retrofit`. Przykładowy interfejs do komunikacji z API [Switter](https://github.com/DaftMobile/switter) przedstawiam poniżej:
+```kotlin
+interface JokeApi {
+    // ednpoint /api/hello
+    @GET("/api/hello")
+    fun hello(): Call<ResponseBody>
+
+    // enpoint /api/joke with basic header auth
+    @GET("/api/joke")
+    fun joke(@Header("x-device-uuid") uuid: String): Call<ResponseBody>
+}
+``` 
+Więcej na temat biblioteki możecie przeczytać w zlinkowanym readme.
+
+Na koniec wspomnieliśmy o tym, że większość istniejących API udostępnia dane enkodowane za pomocą składni JSON. Przedstawiłem, jak serializować i deserializować Kotlinowe obiekty z/do postaci JSON za pomocą biblioteki [Gson](https://github.com/google/gson).
+
+Więcej informacji o tym, jak najefektywniej połączyć **Gson** i **Retrofit** znajdziecie we wskazówkach do pracy domowej nr 4.
 
 ## Materiały
 

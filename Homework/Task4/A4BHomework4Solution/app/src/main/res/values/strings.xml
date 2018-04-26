@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="input_hint">Enter pokemon index here</string>
+    <string name="show_info">Show info</string>
+</resources>
